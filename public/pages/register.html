@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хэрэглэгчийн бүртгэл</title>
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="auth-card card">
+        <h1>Хэрэглэгчийн бүртгэл</h1>
+        <p class="muted">Хичээл авахын тулд бүртгүүлнэ үү.</p>
+        <div id="message" class="message"></div>
+        <form id="register-form" class="form-grid">
+          <div class="split-row">
+            <div class="form-row">
+              <label for="firstName">Нэр</label>
+              <input id="firstName" name="firstName" required>
+            </div>
+            <div class="form-row">
+              <label for="lastName">Овог</label>
+              <input id="lastName" name="lastName" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="phone">Утас</label>
+            <input id="phone" name="phone" required>
+          </div>
+          <div class="form-row">
+            <label for="email">Имэйл</label>
+            <input id="email" name="email" type="email" required>
+          </div>
+          <div class="form-row">
+            <label for="password">Нууц үг</label>
+            <input id="password" name="password" type="password" required>
+          </div>
+          <button class="btn-primary" type="submit">Бүртгүүлэх</button>
+        </form>
+        <p><a href="/pages/login.html">Нэвтрэх хуудас руу буцах</a></p>
+      </section>
+    </main>
+    <script type="module" src="/js/register.js"></script>
+  </body>
+</html>

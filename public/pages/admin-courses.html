@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Админ Хичээл</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/admin.css">
+  </head>
+  <body>
+    <main class="page-shell">
+      <div class="container admin-layout">
+        <div class="header-row">
+          <div>
+            <h1>Админ Хичээл Удирдах</h1>
+            <p class="muted">Signed in as <span id="admin-name"></span></p>
+          </div>
+          <button id="logout-btn" class="btn-secondary">Гарах</button>
+        </div>
+        <div id="message" class="message"></div>
+        <section class="admin-grid">
+          <aside class="card panel">
+            <h2>Хичээл үүсгэх/засах</h2>
+            <form id="course-form" class="form-grid">
+              <div class="form-row">
+                <label for="name">Хичээлийн нэр</label>
+                <input id="name" name="name" required>
+              </div>
+              <div class="form-row">
+                <label for="image">Зураг URL</label>
+                <input id="image" name="image">
+              </div>
+              <div class="toolbar">
+                <button type="submit" class="btn-primary">Хичээл хадгалах</button>
+                <button type="button" id="cancel-edit-btn" class="btn-secondary">Цэвэрлэх</button>
+              </div>
+            </form>
+          </aside>
+          <section id="courses-list"></section>
+        </section>
+      </div>
+    </main>
+    <script type="module" src="/js/admin-courses.js"></script>
+  </body>
+</html>

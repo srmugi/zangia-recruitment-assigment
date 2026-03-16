@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шалгалт</title>
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+    <main class="page-shell">
+      <div class="container exam-layout">
+        <aside class="card sticky-panel">
+          <p class="muted">Хичээл</p>
+          <h2 id="course-title"></h2>
+          <p class="muted">Үлдсэн хугацаа</p>
+          <div id="timer" class="timer">10:00</div>
+          <p id="status" class="muted"></p>
+          <button id="submit-btn" class="btn-primary">Шалгалт илгээх</button>
+          <div id="message" class="message"></div>
+        </aside>
+        <section id="questions"></section>
+      </div>
+    </main>
+    <script type="module" src="/js/exam.js"></script>
+  </body>
+</html>

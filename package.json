@@ -1,0 +1,16 @@
+{
+  "name": "zangia-recruitment-assignment",
+  "version": "1.0.0",
+  "description": "Training exam system demo with admin and user sections.",
+  "main": "server.js",
+  "engines": {
+    "node": ">=23.4.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-session": "^1.18.0"
+  }
+}

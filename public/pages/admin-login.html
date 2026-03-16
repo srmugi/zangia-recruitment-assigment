@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Админ Нэвтрэх</title>
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body data-role="admin">
+    <main class="page-shell">
+      <section class="auth-card card">
+        <h1>Админ Нэвтрэх</h1>
+        <p class="muted">Default account: admin@demo.com / admin123</p>
+        <div id="message" class="message"></div>
+        <form id="login-form" class="form-grid">
+          <div class="form-row">
+            <label for="login">Имэйл эсвэл утас</label>
+            <input id="login" name="login" required>
+          </div>
+          <div class="form-row">
+            <label for="password">Нууц үг</label>
+            <input id="password" name="password" type="password" required>
+          </div>
+          <button class="btn-primary" type="submit">Нэвтрэх</button>
+        </form>
+        <p><a href="/pages/login.html">Хэрэглэгч нэвтрэх</a></p>
+      </section>
+    </main>
+    <script type="module" src="/js/login.js"></script>
+  </body>
+</html>

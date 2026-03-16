@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Админ Үр дүн</title>
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+    <main class="page-shell">
+      <div class="container">
+        <div class="header-row">
+          <div>
+            <h1>Хичээлийн үр дүн</h1>
+            <p class="muted">Хичээл: <span id="course-title"></span></p>
+          </div>
+          <a class="btn-secondary" href="/pages/admin-courses.html">Хичээлрүү буцах</a>
+        </div>
+        <div id="message" class="message"></div>
+        <div class="card panel table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Хэрэглэгч ID</th>
+                <th>Нэр</th>
+                <th>Имэйл</th>
+                <th>Утас</th>
+                <th>Зөв</th>
+                <th>Буруу</th>
+                <th>Оноо</th>
+                <th>Хариулт</th>
+                <th>Үргэлжлэсэн хугацаа</th>
+                <th>Илгээсэн</th>
+              </tr>
+            </thead>
+            <tbody id="results-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="/js/admin-results.js"></script>
+  </body>
+</html>

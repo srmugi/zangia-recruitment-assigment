@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Админ Асуултууд</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/admin.css">
+  </head>
+  <body>
+    <main class="page-shell">
+      <div class="container admin-layout">
+        <div class="header-row">
+          <div>
+            <h1>Асуултын удирдлага</h1>
+            <p class="muted">Хичээл: <span id="course-title"></span></p>
+          </div>
+          <a class="btn-secondary" href="/pages/admin-courses.html">Хичээлрүү буцах</a>
+        </div>
+        <div id="message" class="message"></div>
+        <section class="admin-grid">
+          <aside class="card panel">
+            <h2>Асуулт үүсгэх/засах</h2>
+            <form id="question-form" class="form-grid">
+              <div class="form-row">
+                <label for="text">Асуултын текст</label>
+                <textarea id="text" name="text"></textarea>
+              </div>
+              <div class="form-row">
+                <label for="image">Зураг URL</label>
+                <input id="image" name="image">
+              </div>
+              <div class="form-row">
+                <label for="audio">Аудио URL</label>
+                <input id="audio" name="audio">
+              </div>
+              <div class="form-row">
+                <label for="video">Видео URL</label>
+                <input id="video" name="video">
+              </div>
+              <div class="form-row">
+                <label for="correctAnswer">Зөв хариулт</label>
+                <input id="correctAnswer" name="correctAnswer" required>
+              </div>
+              <div class="form-row">
+                <label for="incorrectAnswer1">Буруу хариулт 1</label>
+                <input id="incorrectAnswer1" name="incorrectAnswer1" required>
+              </div>
+              <div class="form-row">
+                <label for="incorrectAnswer2">Буруу хариулт 2</label>
+                <input id="incorrectAnswer2" name="incorrectAnswer2">
+              </div>
+              <div class="form-row">
+                <label for="incorrectAnswer3">Буруу хариулт 3</label>
+                <input id="incorrectAnswer3" name="incorrectAnswer3">
+              </div>
+              <div class="form-row">
+                <label for="incorrectAnswer4">Буруу хариулт 4</label>
+                <input id="incorrectAnswer4" name="incorrectAnswer4">
+              </div>
+              <div class="form-row">
+                <label for="incorrectAnswer5">Буруу хариулт 5</label>
+                <input id="incorrectAnswer5" name="incorrectAnswer5">
+              </div>
+              <div class="toolbar">
+                <button type="submit" class="btn-primary">Хадгалах</button>
+                <button type="button" id="cancel-edit-btn" class="btn-secondary">Цэвэрлэх</button>
+              </div>
+            </form>
+          </aside>
+          <section id="questions-list"></section>
+        </section>
+      </div>
+    </main>
+    <script type="module" src="/js/admin-questions.js"></script>
+  </body>
+</html>
